@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="projedatabaseDataSet3" targetNamespace="http://tempuri.org/projedatabaseDataSet3.xsd" xmlns:mstns="http://tempuri.org/projedatabaseDataSet3.xsd" xmlns="http://tempuri.org/projedatabaseDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="projedatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="projedatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Batu.Properties.Settings.GlobalReference.Default.projedatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_kullaniciTableAdapter" GeneratorDataComponentClassName="tbl_kullaniciTableAdapter" Name="tbl_kullanici" UserDataComponentName="tbl_kullaniciTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="projedatabaseConnectionString (Settings)" DbObjectName="projedatabase.dbo.tbl_kullanici" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT kullanici_ad, kullanici_puan FROM dbo.tbl_kullanici</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kullanici_ad" DataSetColumn="kullanici_ad" />
+              <Mapping SourceColumn="kullanici_puan" DataSetColumn="kullanici_puan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="projedatabaseDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="projedatabaseDataSet3" msprop:Generator_UserDSName="projedatabaseDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_kullanici" msprop:Generator_TableClassName="tbl_kullaniciDataTable" msprop:Generator_TableVarName="tabletbl_kullanici" msprop:Generator_TablePropName="tbl_kullanici" msprop:Generator_RowDeletingName="tbl_kullaniciRowDeleting" msprop:Generator_RowChangingName="tbl_kullaniciRowChanging" msprop:Generator_RowEvHandlerName="tbl_kullaniciRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_kullaniciRowDeleted" msprop:Generator_UserTableName="tbl_kullanici" msprop:Generator_RowChangedName="tbl_kullaniciRowChanged" msprop:Generator_RowEvArgName="tbl_kullaniciRowChangeEvent" msprop:Generator_RowClassName="tbl_kullaniciRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kullanici_ad" msprop:Generator_ColumnVarNameInTable="columnkullanici_ad" msprop:Generator_ColumnPropNameInRow="kullanici_ad" msprop:Generator_ColumnPropNameInTable="kullanici_adColumn" msprop:Generator_UserColumnName="kullanici_ad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kullanici_puan" msprop:Generator_ColumnVarNameInTable="columnkullanici_puan" msprop:Generator_ColumnPropNameInRow="kullanici_puan" msprop:Generator_ColumnPropNameInTable="kullanici_puanColumn" msprop:Generator_UserColumnName="kullanici_puan" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

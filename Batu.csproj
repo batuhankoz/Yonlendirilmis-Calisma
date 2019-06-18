@@ -45,41 +45,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="hakkimizda_ekran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="hakkimizda_ekran.Designer.cs">
+      <DependentUpon>hakkimizda_ekran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="misafir_anaekran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="misafir_anaekran.Designer.cs">
+      <DependentUpon>misafir_anaekran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="kayit_ekran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="kayit_ekran.Designer.cs">
+      <DependentUpon>kayit_ekran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="giris_ekran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="giris_ekran.Designer.cs">
+      <DependentUpon>giris_ekran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="misafiroyna_ekran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="misafiroyna_ekran.Designer.cs">
+      <DependentUpon>misafiroyna_ekran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="kullanici_anaekran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="kullanici_anaekran.Designer.cs">
+      <DependentUpon>kullanici_anaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicioyna_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicioyna_ekran.Designer.cs">
+      <DependentUpon>kullanicioyna_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicisiralama_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicisiralama_ekran.Designer.cs">
+      <DependentUpon>kullanicisiralama_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projedatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projedatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="siralama_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siralama_ekrani.Designer.cs">
+      <DependentUpon>siralama_ekrani.cs</DependentUpon>
     </Compile>
     <Compile Include="z1_m1.cs">
       <SubType>Form</SubType>
@@ -120,6 +143,102 @@
     <Compile Include="z1_m2.Designer.cs">
       <DependentUpon>z1_m2.cs</DependentUpon>
     </Compile>
+    <Compile Include="z1_m3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z1_m3.Designer.cs">
+      <DependentUpon>z1_m3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z2_m1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z2_m1.Designer.cs">
+      <DependentUpon>z2_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z2_m2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z2_m2.Designer.cs">
+      <DependentUpon>z2_m2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z2_m3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z2_m3.Designer.cs">
+      <DependentUpon>z2_m3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z3_m1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z3_m1.Designer.cs">
+      <DependentUpon>z3_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z3_m2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z3_m2.Designer.cs">
+      <DependentUpon>z3_m2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z3_m3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z3_m3.Designer.cs">
+      <DependentUpon>z3_m3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z4_m1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z4_m1.Designer.cs">
+      <DependentUpon>z4_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z4_m2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z4_m2.Designer.cs">
+      <DependentUpon>z4_m2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z4_m3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z4_m3.Designer.cs">
+      <DependentUpon>z4_m3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z5_m1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z5_m1.Designer.cs">
+      <DependentUpon>z5_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z5_m2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z5_m2.Designer.cs">
+      <DependentUpon>z5_m2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z5_m3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z5_m3.Designer.cs">
+      <DependentUpon>z5_m3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z6_m1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z6_m1.Designer.cs">
+      <DependentUpon>z6_m1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z6_m2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z6_m2.Designer.cs">
+      <DependentUpon>z6_m2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="z6_m3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="z6_m3.Designer.cs">
+      <DependentUpon>z6_m3.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -156,29 +275,49 @@
     <None Include="projedatabaseDataSet2.xss">
       <DependentUpon>projedatabaseDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="projedatabaseDataSet3.xsc">
+      <DependentUpon>projedatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="projedatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projedatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projedatabaseDataSet3.xss">
+      <DependentUpon>projedatabaseDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="hakkimizda_ekran.resx">
+      <DependentUpon>hakkimizda_ekran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="misafir_anaekran.resx">
+      <DependentUpon>misafir_anaekran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="kayit_ekran.resx">
+      <DependentUpon>kayit_ekran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="giris_ekran.resx">
+      <DependentUpon>giris_ekran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="misafiroyna_ekran.resx">
+      <DependentUpon>misafiroyna_ekran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="kullanici_anaekran.resx">
+      <DependentUpon>kullanici_anaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicioyna_ekran.resx">
+      <DependentUpon>kullanicioyna_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicisiralama_ekran.resx">
+      <DependentUpon>kullanicisiralama_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siralama_ekrani.resx">
+      <DependentUpon>siralama_ekrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="z1_m1.resx">
       <DependentUpon>z1_m1.cs</DependentUpon>
@@ -186,9 +325,58 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="z1_m2.resx">
       <DependentUpon>z1_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z1_m3.resx">
+      <DependentUpon>z1_m3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z2_m1.resx">
+      <DependentUpon>z2_m1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z2_m2.resx">
+      <DependentUpon>z2_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z2_m3.resx">
+      <DependentUpon>z2_m3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z3_m1.resx">
+      <DependentUpon>z3_m1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z3_m2.resx">
+      <DependentUpon>z3_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z3_m3.resx">
+      <DependentUpon>z3_m3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z4_m1.resx">
+      <DependentUpon>z4_m1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z4_m2.resx">
+      <DependentUpon>z4_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z4_m3.resx">
+      <DependentUpon>z4_m3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z5_m1.resx">
+      <DependentUpon>z5_m1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z5_m2.resx">
+      <DependentUpon>z5_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z5_m3.resx">
+      <DependentUpon>z5_m3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z6_m1.resx">
+      <DependentUpon>z6_m1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z6_m2.resx">
+      <DependentUpon>z6_m2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="z6_m3.resx">
+      <DependentUpon>z6_m3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +399,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background_manzara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_manzara1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_630x450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_manzara5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_manzara6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_manzara7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_manzara8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buz_duvar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buz_duvar1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

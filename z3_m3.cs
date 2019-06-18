@@ -11,45 +11,29 @@ using System.Data.SqlClient;
 
 namespace Batu
 {
-    public partial class z1_m2 : Form
+    public partial class z3_m3 : Form
     {
-        public z1_m2()
+        public z3_m3()
         {
             InitializeComponent();
         }
+        int saniye = 15;
+        int dakika = 1;
+        int puan = 75;
         string k_ad = Form3.k_ad;
-        int saniye = 30;
-        int dakika = 0;
-        int puan = 30;
         SqlConnection sqlserver = new SqlConnection("Data Source=HPCOMPUTER\\SQLEXPRESS;Initial Catalog=projedatabase;Integrated Security=True");
         SqlDataAdapter sqldataadapter;
         SqlCommand sqlcommand;
         SqlDataReader sqlreader;
-        private void Duvara_dokundu(object sender, EventArgs e)
+
+        private void Z3_m3_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Duvara değdin ve başlangıç noktasına dönüyorsun.Bi'daha ki sefere daha dikkatli olmalısın.");
+            MessageBox.Show("Bu bölümün süresi :" + dakika + "dakika : " + saniye + "saniye'dir");
             Point baslangicnoktasi = label1.Location;
             Cursor.Position = PointToScreen(baslangicnoktasi);
-        }
-
-        private void Bitis(object sender, EventArgs e)
-        {
-            sure.Stop();
-            MessageBox.Show("Tebrikler haritayı bitirdiniz...(Kazanılan puan: " + puan + ")");
-            sqlserver.Open();
-            sqlcommand = new SqlCommand("UPDATE tbl_kullanici SET kullanici_puan=kullanici_puan+'" + puan + "' WHERE kullanici_ad = '" + k_ad + "'", sqlserver);
-            sqlcommand.ExecuteNonQuery();
-            sqlserver.Close();
-            this.Close();
-        }
-
-        private void esc_tusu(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Escape)
-            {
-                sure.Stop();
-                Close();
-            }
+            sure.Enabled = true;
+            sure.Interval = 1000;
+            sure.Start();
         }
 
         private void Sure_Tick(object sender, EventArgs e)
@@ -80,15 +64,29 @@ namespace Batu
             }
             lbl_sure.Text = "Dakika: " + dakika + "Saniye: " + saniye;
         }
-
-        private void Z1_m2_Load(object sender, EventArgs e)
+        private void Duvara_dokundu(object sender, EventArgs e)
         {
-            MessageBox.Show("Bu bölümün süresi :" + dakika + "dakika : " + saniye + "saniye'dir");
+            MessageBox.Show("Duvara değdin ve başlangıç noktasına dönüyorsun.Bi'daha ki sefere daha dikkatli olmalısın.");
             Point baslangicnoktasi = label1.Location;
             Cursor.Position = PointToScreen(baslangicnoktasi);
-            sure.Enabled = true;
-            sure.Interval = 1000;
-            sure.Start();
+        }
+        private void Bitis(object sender, EventArgs e)
+        {
+            sure.Stop();
+            MessageBox.Show("Tebrikler haritayı bitirdiniz...(Kazanılan puan: " + puan + ")");
+            sqlserver.Open();
+            sqlcommand = new SqlCommand("UPDATE tbl_kullanici SET kullanici_puan=kullanici_puan+'" + puan + "' WHERE kullanici_ad = '" + k_ad + "'", sqlserver);
+            sqlcommand.ExecuteNonQuery();
+            sqlserver.Close();
+            this.Close();
+        }
+        private void esc_tusu(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                sure.Stop();
+                Close();
+            }
         }
     }
 }
